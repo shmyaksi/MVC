@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "779b6539-2336-4f94-8bcb-b53fd8c9f685": {
+      "ProjectGuid": "779b6539-2336-4f94-8bcb-b53fd8c9f685",
+      "DisplayName": "MvcDataViews",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
