@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<p></p>
+
+<img src="~/Content/image.jpg" width="630" height="370" align="left" />
+<div class="jumbotron">
+
+    <div class="row">
+        
+        <div class="col-md-4">
+            <h3>Already existing links</h3>
+            <table class="table">
+                <tr>
+                    <td><p>Name</p></td>
+                    <td><p>Link</p></td>
+                </tr>
+                @foreach (var c in ViewBag.Links)
+                {
+
+                    <tr>
+                        <td><p>@c.Name</p></td>
+                        <td><p>@c.Link</p></td>
+                    </tr>
+                }
+            </table>
+            <p>
+                <a class="btn btn-default"
+                   href="/Home/CreateBid">
+                    Put the link
+                    &raquo;
+                </a>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+
+    </div>
+</div>

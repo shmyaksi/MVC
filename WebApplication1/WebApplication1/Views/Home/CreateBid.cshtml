@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "CreateBid";
+}
+
+<h2>Put the link</h2>
+<h3>Ссылки</h3>
+<table class="table">
+    <tr class="new">
+        <td ><p><strong>Name</strong></p></td>
+        <td>
+            <p><strong>Link</strong>
+       
+            </p>
+        </td>
+    </tr>
+    @foreach (var c in ViewBag.Bids)
+    {
+        <tr>
+            <td><p>@c.Name</p></td>
+            <td>
+                <p>
+                    @c.Link
+                </p>
+            </td>
+        </tr>
+    }
+</table>
+<h3>Оставьте ссылку</h3>
+<form method="post" action="">
+    <table class="table">
+        <tr>
+            <td><p>Введите название сайта </p></td>
+            <td>
+                <input type="text"
+                       name="Name" />
+            </td>
+        </tr>
+        <tr>
+            <td><p>Ссылка</p></td>
+            <td>
+                <input type="text"
+                       name="Link" />
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Отправить" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+
